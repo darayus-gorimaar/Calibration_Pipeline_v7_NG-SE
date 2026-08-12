@@ -1,0 +1,8 @@
+# Ignore data and output directories
+DATA/
+generated/
+
+# Ignore build/python artifacts
+*.egg-info/
+__pycache__/
+.ipynb_checkpoints/

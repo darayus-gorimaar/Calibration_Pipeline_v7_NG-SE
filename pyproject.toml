@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calibration_pipeline"
+version = "0.7.0"
+
+[tool.setuptools]
+packages = ["_configs", "_utils"]
