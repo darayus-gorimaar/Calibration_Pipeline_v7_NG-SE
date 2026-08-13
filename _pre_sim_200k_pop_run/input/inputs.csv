@@ -1,0 +1,2 @@
+input_file,beta_raster,access_rate,access_raster,beta,population_bin
+input_beta_0.0000_access_0.000_pop_200000.yml,ng-se_beta_0.0000.asc,0.000,ng-se_treatmentseeking_0.000.asc,0.0000,200000

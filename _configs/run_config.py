@@ -8,28 +8,14 @@ calibration_replicates = 25
 validation_replicates = 15
 
 # population scales
-pre_calibration_sim_scale = 0.0025                           # Full Value: 1
+pre_calibration_sim_scale = 1                           # Full Value: 1
 pre_calibration_population_validation_scale = 0.25      # Full Value: 0.25
-calibration_population_scale = 1                 # Full Value: 1
-validation_population_scale = 0.25                    # Full Value: 0.25
+calibration_population_scale = 0.01                        # Full Value: 1
+validation_population_scale = 0.001                      # Full Value: 0.25
 
 ###############################################################
 
-# run_number = 1  # pfpr_incidence calibration not applied
-# run_number = "1_copy" # carbon copy of run 1 which worked.
-run_number = "1_copy_new_treatment_seeking" # carbon copy of run 1 which worked, but with new treatment seeking raster and the beta raster is diff than run 10
-# run_number = "1_copy_new_beta_raster" # carbon copy of run 1 which worked, but with new beta raster from run 10
-# run_number = 3  # treatment seeking data normalized to 0-1 range, pfpr_incidence calibration applied
-# run_number = 4  # treatment seeking data normalized to 0-1 range, pfpr_incidence calibration applied
-# run_number = 5  # treatment seeking data normalized to 0-1 range, pfpr_incidence calibration NOT applied
-# run_number = 6  # treatment seeking data NOT normalized to 0-1 range, pfpr_incidence calibration NOT applied, Same Beta as run 5
-''' note treatement seeking in this run is not normalized but is named to normalized just to avoid changing input config '''
-# run_number = 7  # treatment seeking data NOT normalized to 0-1 range, pfpr_incidence calibration NOT applied, Same Beta as run 1,
-
-# run_number = 10  # Should be same initial population raster as run 1
-# run_number = "10_copy" # carbon copy of run 10 EXCEPT input yaml is carbon copy from run 1 except treatment seeking raster.
-
-# run_number = f"test_{input_population_file}"
+run_number = 1 
 
 ###############################################################
 
