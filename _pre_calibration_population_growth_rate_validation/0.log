@@ -1,0 +1,686 @@
+[2026-08-13 16:52:18] [info] Default logger initialized.
+[2026-08-13 16:52:18] [info] Malaria Simulation v6.1.0 (branch: bonilab/malasim-v6-SURF/main, commit: 15744b7)
+[2026-08-13 16:52:18] [info] Starting...
+[2026-08-13 16:52:18] [info] Parsing command line arguments
+[2026-08-13 16:52:18] [info] Verbosity level set to 1. Info, debug will be logged.
+[2026-08-13 16:52:18] [info] Loading configuration file: input/input_population_bins_beta_zero_pop_0.001.yml
+[2026-08-13 16:52:18] [info] Configuration file loaded successfully: input/input_population_bins_beta_zero_pop_0.001.yml
+[2026-08-13 16:52:18] [info] Using random seed number
+[2026-08-13 16:52:18] [info] chromosome_node: 5
+[2026-08-13 16:52:18] [info] chromosome_node: 7
+[2026-08-13 16:52:18] [info] chromosome_node: 13
+[2026-08-13 16:52:18] [info] chromosome_node: 14
+[2026-08-13 16:52:18] [info] Found version6_pfpr_incidence_calibrations section — parsing overrides
+[2026-08-13 16:52:18] [info] ImmuneSystemParameterOverrides: chosen_calibration_id=0, random_selection=false
+[2026-08-13 16:52:18] [info]   calibration_id[0]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.8
+[2026-08-13 16:52:18] [info]   calibration_id[0]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.5
+[2026-08-13 16:52:18] [info]   calibration_id[0]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[0]: genotype_parameters:mutation_probability_per_locus=0.00125
+[2026-08-13 16:52:18] [info]   calibration_id[0]: immune_system_parameters:factor_effect_age_mature_immunity=0.1
+[2026-08-13 16:52:18] [info]   calibration_id[0]: immune_system_parameters:immune_effect_on_progression_to_clinical=3
+[2026-08-13 16:52:18] [info]   calibration_id[0]: immune_system_parameters:midpoint=0.2
+[2026-08-13 16:52:18] [info]   calibration_id[1]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.6
+[2026-08-13 16:52:18] [info]   calibration_id[1]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.6
+[2026-08-13 16:52:18] [info]   calibration_id[1]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[1]: genotype_parameters:mutation_probability_per_locus=0.0015
+[2026-08-13 16:52:18] [info]   calibration_id[1]: immune_system_parameters:factor_effect_age_mature_immunity=0.1
+[2026-08-13 16:52:18] [info]   calibration_id[1]: immune_system_parameters:immune_effect_on_progression_to_clinical=3
+[2026-08-13 16:52:18] [info]   calibration_id[1]: immune_system_parameters:midpoint=0.15
+[2026-08-13 16:52:18] [info]   calibration_id[2]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.6
+[2026-08-13 16:52:18] [info]   calibration_id[2]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.7
+[2026-08-13 16:52:18] [info]   calibration_id[2]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[2]: genotype_parameters:mutation_probability_per_locus=0.00055
+[2026-08-13 16:52:18] [info]   calibration_id[2]: immune_system_parameters:factor_effect_age_mature_immunity=1
+[2026-08-13 16:52:18] [info]   calibration_id[2]: immune_system_parameters:immune_effect_on_progression_to_clinical=1
+[2026-08-13 16:52:18] [info]   calibration_id[2]: immune_system_parameters:midpoint=0.04
+[2026-08-13 16:52:18] [info]   calibration_id[3]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.6
+[2026-08-13 16:52:18] [info]   calibration_id[3]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.6
+[2026-08-13 16:52:18] [info]   calibration_id[3]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[3]: genotype_parameters:mutation_probability_per_locus=0.00175
+[2026-08-13 16:52:18] [info]   calibration_id[3]: immune_system_parameters:factor_effect_age_mature_immunity=0.1
+[2026-08-13 16:52:18] [info]   calibration_id[3]: immune_system_parameters:immune_effect_on_progression_to_clinical=3
+[2026-08-13 16:52:18] [info]   calibration_id[3]: immune_system_parameters:midpoint=0.15
+[2026-08-13 16:52:18] [info]   calibration_id[4]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.65
+[2026-08-13 16:52:18] [info]   calibration_id[4]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=1
+[2026-08-13 16:52:18] [info]   calibration_id[4]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[4]: genotype_parameters:mutation_probability_per_locus=0.00065
+[2026-08-13 16:52:18] [info]   calibration_id[4]: immune_system_parameters:factor_effect_age_mature_immunity=0.5
+[2026-08-13 16:52:18] [info]   calibration_id[4]: immune_system_parameters:immune_effect_on_progression_to_clinical=1.5
+[2026-08-13 16:52:18] [info]   calibration_id[4]: immune_system_parameters:midpoint=0.1
+[2026-08-13 16:52:18] [info]   calibration_id[5]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.75
+[2026-08-13 16:52:18] [info]   calibration_id[5]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.5
+[2026-08-13 16:52:18] [info]   calibration_id[5]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[5]: genotype_parameters:mutation_probability_per_locus=0.0008
+[2026-08-13 16:52:18] [info]   calibration_id[5]: immune_system_parameters:factor_effect_age_mature_immunity=0.5
+[2026-08-13 16:52:18] [info]   calibration_id[5]: immune_system_parameters:immune_effect_on_progression_to_clinical=1.5
+[2026-08-13 16:52:18] [info]   calibration_id[5]: immune_system_parameters:midpoint=0.1
+[2026-08-13 16:52:18] [info]   calibration_id[6]: epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.6
+[2026-08-13 16:52:18] [info]   calibration_id[6]: epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.5
+[2026-08-13 16:52:18] [info]   calibration_id[6]: genotype_parameters:default_cnv_reversion_multiplier=0
+[2026-08-13 16:52:18] [info]   calibration_id[6]: genotype_parameters:mutation_probability_per_locus=0.00065
+[2026-08-13 16:52:18] [info]   calibration_id[6]: immune_system_parameters:factor_effect_age_mature_immunity=7.5
+[2026-08-13 16:52:18] [info]   calibration_id[6]: immune_system_parameters:immune_effect_on_progression_to_clinical=3.5
+[2026-08-13 16:52:18] [info]   calibration_id[6]: immune_system_parameters:midpoint=0.2
+[2026-08-13 16:52:18] [info] Applying calibration_id[0] overrides:
+[2026-08-13 16:52:18] [info]   immune_system_parameters:immune_effect_on_progression_to_clinical=3
+[2026-08-13 16:52:18] [info]   immune_system_parameters:factor_effect_age_mature_immunity=0.1
+[2026-08-13 16:52:18] [info]   immune_system_parameters:midpoint=0.2
+[2026-08-13 16:52:18] [info]   epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability=0.5
+[2026-08-13 16:52:18] [info]   epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base=0.8
+[2026-08-13 16:52:18] [info]   genotype_parameters:mutation_probability_per_locus overridden to 0.00125
+[2026-08-13 16:52:18] [info]   genotype_parameters:default_cnv_reversion_multiplier overridden to 0
+[2026-08-13 16:52:18] [info] calibration_id[0] overrides applied successfully
+[2026-08-13 16:52:18] [info] Configuration file parsed successfully
+[2026-08-13 16:52:18] [info] Validating all cross field validations
+[2026-08-13 16:52:18] [info] Genotype info:
+[2026-08-13 16:52:18] [info] ||||YF1||TTHFIMG,x||||||FNCMYRIPRPCRA|1 0.05
+[2026-08-13 16:52:18] [info] ||||YF1||TTHFIMG,x||||||FNCMYRIPRPCRA|1 0.05
+[2026-08-13 16:52:18] [debug] chromosome:5
+[2026-08-13 16:52:18] [debug] 	gene:Pfmdr1
+[2026-08-13 16:52:18] [debug] 	max copies:2
+[2026-08-13 16:52:18] [debug] 	cnv crs:0
+[2026-08-13 16:52:18] [debug] 	cnv crs:0.0005
+[2026-08-13 16:52:18] [debug] 	cnv ec50:4
+[2026-08-13 16:52:18] [debug] 		factor:1
+[2026-08-13 16:52:18] [debug] 		factor:2.44444444
+[2026-08-13 16:52:18] [debug] 	cnv ec50:1
+[2026-08-13 16:52:18] [debug] 		factor:1
+[2026-08-13 16:52:18] [debug] 		factor:1.3
+[2026-08-13 16:52:18] [debug] 	cnv_ec50_2_or_more id:1
+[2026-08-13 16:52:18] [debug] 	cnv_ec50_2_or_more factor:1.05
+[2026-08-13 16:52:18] [debug] 		aa:N
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 6
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.25
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 1
+[2026-08-13 16:52:18] [debug] 			factor:1.25
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 2
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.42
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		aa:F
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 1
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.25
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 2
+[2026-08-13 16:52:18] [debug] 			factor:1.2
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] chromosome:7
+[2026-08-13 16:52:18] [debug] 	gene:Pfcrt
+[2026-08-13 16:52:18] [debug] 	average crs:0.129
+[2026-08-13 16:52:18] [debug] 	cnv_ec50_2_or_more id:3
+[2026-08-13 16:52:18] [debug] 	cnv_ec50_2_or_more factor:1
+[2026-08-13 16:52:18] [debug] 		aa:K
+[2026-08-13 16:52:18] [debug] 		aa:T
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.003875969
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 6
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 1
+[2026-08-13 16:52:18] [debug] 			factor:1.1
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 2
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.2
+[2026-08-13 16:52:18] [debug] 		aa:T
+[2026-08-13 16:52:18] [debug] 		aa:S
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0002433748
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 3
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6648
+[2026-08-13 16:52:18] [debug] 		aa:H
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.003875969
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 3
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6648
+[2026-08-13 16:52:18] [debug] 		aa:F
+[2026-08-13 16:52:18] [debug] 		aa:I
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0078751277
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 3
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:2.2226
+[2026-08-13 16:52:18] [debug] 		aa:I
+[2026-08-13 16:52:18] [debug] 		aa:F
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0035124091
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 3
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6648
+[2026-08-13 16:52:18] [debug] 		aa:M
+[2026-08-13 16:52:18] [debug] 		aa:L
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.003875969
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 3
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 		aa:G
+[2026-08-13 16:52:18] [debug] 		aa:V
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.003875969
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 3
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 	gene:Pfkaf
+[2026-08-13 16:52:18] [debug] 		aa:x
+[2026-08-13 16:52:18] [debug] 		aa:X
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 7
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] chromosome:13
+[2026-08-13 16:52:18] [debug] 	gene:Pfkelch13
+[2026-08-13 16:52:18] [debug] 	cnv_ec50_2_or_more id:0
+[2026-08-13 16:52:18] [debug] 	cnv_ec50_2_or_more factor:1.1
+[2026-08-13 16:52:18] [debug] 		aa:F
+[2026-08-13 16:52:18] [debug] 		aa:I
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:N
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:C
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:M
+[2026-08-13 16:52:18] [debug] 		aa:I
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		aa:H
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:R
+[2026-08-13 16:52:18] [debug] 		aa:T
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:I
+[2026-08-13 16:52:18] [debug] 		aa:T
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:P
+[2026-08-13 16:52:18] [debug] 		aa:L
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:R
+[2026-08-13 16:52:18] [debug] 		aa:H
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:P
+[2026-08-13 16:52:18] [debug] 		aa:L
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:C
+[2026-08-13 16:52:18] [debug] 		aa:Y
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:R
+[2026-08-13 16:52:18] [debug] 		aa:I
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] 		aa:A
+[2026-08-13 16:52:18] [debug] 		aa:V
+[2026-08-13 16:52:18] [debug] 		crs:0
+[2026-08-13 16:52:18] [debug] 		crs:0.0005
+[2026-08-13 16:52:18] [debug] 		multiplicative_effect_on_EC50: 0
+[2026-08-13 16:52:18] [debug] 			factor:1
+[2026-08-13 16:52:18] [debug] 			factor:1.6
+[2026-08-13 16:52:18] [debug] chromosome:14
+[2026-08-13 16:52:18] [debug] 	gene:Pfplasmepsin
+[2026-08-13 16:52:18] [debug] 	max copies:2
+[2026-08-13 16:52:18] [debug] 	cnv crs:0
+[2026-08-13 16:52:18] [debug] 	cnv crs:0.0005
+[2026-08-13 16:52:18] [debug] 	cnv ec50:3
+[2026-08-13 16:52:18] [debug] 		factor:1
+[2026-08-13 16:52:18] [debug] 		factor:1.37
+[2026-08-13 16:52:18] [info] Processing ModelSettings
+[2026-08-13 16:52:18] [info] Processing SimulationTimeframe
+[2026-08-13 16:52:18] [info] Processing TransmissionSettings
+[2026-08-13 16:52:18] [info] Using transmission_parameter: 0.55
+[2026-08-13 16:52:18] [info] Processing PopulationDemographic
+[2026-08-13 16:52:18] [info] Processing SpatialSettings
+[2026-08-13 16:52:18] [info] Processing using GridBasedProcessor
+[2026-08-13 16:52:18] [info] Loading input/ng-se_beta_zero.asc
+[2026-08-13 16:52:18] [info] Loading input/ng-se_population_backwards_projected_2011.asc
+[2026-08-13 16:52:18] [info] Loading input/ng-se_traveltime.asc
+[2026-08-13 16:52:18] [info] Loading input/ng-se_treatment_seeking_normalized.asc
+[2026-08-13 16:52:18] [info] Loading input/ng-se_treatment_seeking_normalized.asc
+[2026-08-13 16:52:18] [info] Found admin level: district with raster: input/ng-se_district_seq1.asc
+[2026-08-13 16:52:18] [info] Checking raster: 268x217 with cell size: 5000
+[2026-08-13 16:52:18] [info] Checking raster: 268x217 with cell size: 5000
+[2026-08-13 16:52:18] [info] Checking raster: 268x217 with cell size: 5000
+[2026-08-13 16:52:18] [info] Checking raster: 268x217 with cell size: 5000
+[2026-08-13 16:52:18] [info] Checking raster: 268x217 with cell size: 5000
+[2026-08-13 16:52:18] [info] Location database is empty, generating locations using first available raster.
+[2026-08-13 16:52:18] [info] Using Raster Information to generate locations
+[2026-08-13 16:52:18] [info] Generated 6851 locations from 58156 total cells, 51305 cells with no data
+[2026-08-13 16:52:18] [info] Euclidean distances for 6851 raster locations stored in 0.3 MB (dense would be 0.3 GB)
+[2026-08-13 16:52:18] [info] Initialized administrative level 'district' with 6 units
+[2026-08-13 16:52:18] [info] Initialized admin level: district
+[2026-08-13 16:52:18] [info] Administrative boundaries initialized successfully
+[2026-08-13 16:52:18] [info] Processing SeasonalitySettings
+[2026-08-13 16:52:18] [info] Seasonality disabled, using default value of 1.0
+[2026-08-13 16:52:18] [info] Processing MovementSettings
+[2026-08-13 16:52:18] [info] Processing BurkinaFasoSM
+[2026-08-13 16:52:18] [info] Processing ParasiteParameters
+[2026-08-13 16:52:18] [info] Processing ImmuneSystemParameters
+[2026-08-13 16:52:18] [info] alpha_immune 0.8000000000000002 beta_immune 7.200000000000002
+[2026-08-13 16:52:18] [info] c_min 0.744189149062827 c_max 0.9426200358570943
+[2026-08-13 16:52:18] [info] Processing DrugParameters
+[2026-08-13 16:52:18] [info] Processing TherapyParameters
+[2026-08-13 16:52:18] [info] Processing StrategyParameters
+[2026-08-13 16:52:18] [info] Strategy 0: 0-NG-SE-AL-QN-SP-CQ-AQ-Private-2013-0,3,4,5,6-0.0261508,0.0266616,0.429392,0.433601,0.0841945
+[2026-08-13 16:52:18] [info] Strategy 1: 1-NG-SE-AL-QN-SP-CQ-AQ-Private-2015-0,3,4,5,6-0.296349,0.0820286,0.173029,0.37041,0.0781835
+[2026-08-13 16:52:18] [info] Strategy 2: 2-NG-SE-AL-QN-SP-CQ-AQ-Private-2018-0,3,4,5,6-0.401724,0.133965,0.112652,0.260318,0.0913398
+[2026-08-13 16:52:18] [info] Strategy 3: 3-NG-SE-AL-QN-SP-CQ-AQ-Private-2021-0,3,4,5,6-0.677392,0.029172,0.106392,0.149292,0.037752
+[2026-08-13 16:52:18] [info] Strategy 4: 4-NG-SE-AL-SFTStrategy-Public-0
+[2026-08-13 16:52:18] [info] Strategy 5: 5-NG-SE-Baseline-2013-0.348::0.652::
+[2026-08-13 16:52:18] [info] Strategy 6: 6-NG-SE-Baseline-2015-0.304::0.696::
+[2026-08-13 16:52:18] [info] Strategy 7: 7-NG-SE-Baseline-2018-0.372::0.628::
+[2026-08-13 16:52:18] [info] Strategy 8: 8-NG-SE-Baseline-2021-0.445::0.555::
+[2026-08-13 16:52:18] [info] Strategy 9: 9-intervention-2027-AL-SFTStrategy-0
+[2026-08-13 16:52:18] [info] Processing GenotypeParameters
+[2026-08-13 16:52:18] [info] Processing EpidemiologicalParameters
+[2026-08-13 16:52:18] [info] relative_biting_info gamma_a: 0.25, gamma_b: 20
+[2026-08-13 16:52:18] [info] Processing MosquitoParameters
+[2026-08-13 16:52:18] [info] Processing MosquitoParameters using location based mode
+[2026-08-13 16:52:18] [info] 1 IFR value provided, distributing equally to all locations
+[2026-08-13 16:52:18] [info] Decoding PopulationEvents
+[2026-08-13 16:52:18] [info] Parsing event: turn_off_mutation
+[2026-08-13 16:52:18] [info] Building events of type: turn_off_mutation
+[2026-08-13 16:52:18] [info] Population events parsed successfully
+[2026-08-13 16:52:18] [info] Configuration file validated successfully
+[2026-08-13 16:52:18] [info] Model initialized with seed: 1786639938954041380
+[2026-08-13 16:52:18] [info] Using SQLiteMonthlyReporter with aggregation at multiple admin levels, cell level reporting is disabled.
+[2026-08-13 16:52:18] [info] Base SQLiteDbReporter initialized.
+[2026-08-13 16:52:18] [info] SQLiteDbReporter Creating all reporting tables
+[2026-08-13 16:52:18] [info] SQLiteDbReporter Creating reporting tables for level
+[2026-08-13 16:52:18] [info] SQLiteDbReporter Creating reporting tables for level
+[2026-08-13 16:52:19] [info] SQLiteMonthlyReporter: recorded 10 'version6_pfpr_incidence_calibrations' configuration rows.
+[2026-08-13 16:52:19] [info] Model initialized reporters.
+[2026-08-13 16:52:19] [info] Model initialized scheduler.
+[2026-08-13 16:52:19] [info] Model initialized treatment strategy.
+[2026-08-13 16:52:19] [info] Model initialized second-line treatment strategy.
+[2026-08-13 16:52:19] [info] Model initialized treatment coverage model.
+[2026-08-13 16:52:19] [info] Model initialized data collector.
+[2026-08-13 16:52:19] [info] Model initializing population...
+[2026-08-13 16:52:19] [info] Model initialized population.
+[2026-08-13 16:52:19] [info] Kernel prepared for BurkinaFasoSM, 6851 locations, 0.3 MB
+[2026-08-13 16:52:19] [info] Preparing travel surface...
+[2026-08-13 16:52:19] [info] BurkinaFasoSM: surface travel prepared, size: 6851
+[2026-08-13 16:52:19] [info] Model initialized movement model.
+[2026-08-13 16:52:19] [info] Model initialized mosquito.
+[2026-08-13 16:52:19] [info] Model initialized initial cases.
+[2026-08-13 16:52:19] [info] Scheduling population event: turn_off_mutation at 0
+[2026-08-13 16:52:19] [info] Perform before run events
+[2026-08-13 16:52:19] [info] ===== version6_pfpr_incidence_calibrations (before_run verification) =====
+[2026-08-13 16:52:19] [info]   section_present    = true
+[2026-08-13 16:52:19] [info]   random_selection   = false
+[2026-08-13 16:52:19] [info]   chosen_calibration_id = 0
+[2026-08-13 16:52:19] [info]   selected calibration_id[0] has 7 override(s):
+[2026-08-13 16:52:19] [info]     [OK] epidemiological_parameters:age_based_probability_of_seeking_treatment:power:base: override=0.8, effective=0.8
+[2026-08-13 16:52:19] [info]     [OK] epidemiological_parameters:allow_new_coinfection_to_cause_symptoms:probability: override=0.5, effective=0.5
+[2026-08-13 16:52:19] [info]     [OK] genotype_parameters:default_cnv_reversion_multiplier: override=0, effective=0
+[2026-08-13 16:52:19] [info]     [OK] genotype_parameters:mutation_probability_per_locus: override=0.00125, effective=0.00125
+[2026-08-13 16:52:19] [info]     [OK] immune_system_parameters:factor_effect_age_mature_immunity: override=0.1, effective=0.1
+[2026-08-13 16:52:19] [info]     [OK] immune_system_parameters:immune_effect_on_progression_to_clinical: override=3, effective=3
+[2026-08-13 16:52:19] [info]     [OK] immune_system_parameters:midpoint: override=0.2, effective=0.2
+[2026-08-13 16:52:19] [info] ======================================================================
+[2026-08-13 16:52:19] [info] Day: 0
+[2026-08-13 16:52:19] [info] 2011/1/01: turn mutation off
+[2026-08-13 16:52:21] [info] Day: 30
+[2026-08-13 16:52:24] [info] Day: 60
+[2026-08-13 16:52:26] [info] Day: 90
+[2026-08-13 16:52:29] [info] Day: 120
+[2026-08-13 16:52:31] [info] Day: 150
+[2026-08-13 16:52:33] [info] Day: 180
+[2026-08-13 16:52:33] [info] Day: 210
+[2026-08-13 16:52:34] [info] Day: 240
+[2026-08-13 16:52:34] [info] Day: 270
+[2026-08-13 16:52:35] [info] Day: 300
+[2026-08-13 16:52:35] [info] No genotypes recorded in the simulation at timestep, 304
+[2026-08-13 16:52:35] [info] Day: 330
+[2026-08-13 16:52:35] [info] No genotypes recorded in the simulation at timestep, 334
+[2026-08-13 16:52:35] [info] Day: 360
+[2026-08-13 16:52:35] [info] No genotypes recorded in the simulation at timestep, 365
+[2026-08-13 16:52:36] [info] Day: 390
+[2026-08-13 16:52:36] [info] No genotypes recorded in the simulation at timestep, 396
+[2026-08-13 16:52:36] [info] Day: 420
+[2026-08-13 16:52:36] [info] No genotypes recorded in the simulation at timestep, 425
+[2026-08-13 16:52:37] [info] Day: 450
+[2026-08-13 16:52:37] [info] No genotypes recorded in the simulation at timestep, 456
+[2026-08-13 16:52:37] [info] Day: 480
+[2026-08-13 16:52:37] [info] No genotypes recorded in the simulation at timestep, 486
+[2026-08-13 16:52:37] [info] Day: 510
+[2026-08-13 16:52:37] [info] No genotypes recorded in the simulation at timestep, 517
+[2026-08-13 16:52:38] [info] Day: 540
+[2026-08-13 16:52:38] [info] No genotypes recorded in the simulation at timestep, 547
+[2026-08-13 16:52:38] [info] Day: 570
+[2026-08-13 16:52:38] [info] No genotypes recorded in the simulation at timestep, 578
+[2026-08-13 16:52:39] [info] Day: 600
+[2026-08-13 16:52:39] [info] No genotypes recorded in the simulation at timestep, 609
+[2026-08-13 16:52:39] [info] Day: 630
+[2026-08-13 16:52:39] [info] No genotypes recorded in the simulation at timestep, 639
+[2026-08-13 16:52:39] [info] Day: 660
+[2026-08-13 16:52:39] [info] No genotypes recorded in the simulation at timestep, 670
+[2026-08-13 16:52:40] [info] Day: 690
+[2026-08-13 16:52:40] [info] No genotypes recorded in the simulation at timestep, 700
+[2026-08-13 16:52:40] [info] Day: 720
+[2026-08-13 16:52:40] [info] No genotypes recorded in the simulation at timestep, 731
+[2026-08-13 16:52:41] [info] Day: 750
+[2026-08-13 16:52:41] [info] No genotypes recorded in the simulation at timestep, 762
+[2026-08-13 16:52:41] [info] Day: 780
+[2026-08-13 16:52:41] [info] No genotypes recorded in the simulation at timestep, 790
+[2026-08-13 16:52:41] [info] Day: 810
+[2026-08-13 16:52:42] [info] No genotypes recorded in the simulation at timestep, 821
+[2026-08-13 16:52:42] [info] Day: 840
+[2026-08-13 16:52:42] [info] No genotypes recorded in the simulation at timestep, 851
+[2026-08-13 16:52:42] [info] Day: 870
+[2026-08-13 16:52:42] [info] No genotypes recorded in the simulation at timestep, 882
+[2026-08-13 16:52:43] [info] Day: 900
+[2026-08-13 16:52:43] [info] No genotypes recorded in the simulation at timestep, 912
+[2026-08-13 16:52:43] [info] Day: 930
+[2026-08-13 16:52:43] [info] No genotypes recorded in the simulation at timestep, 943
+[2026-08-13 16:52:43] [info] Day: 960
+[2026-08-13 16:52:44] [info] No genotypes recorded in the simulation at timestep, 974
+[2026-08-13 16:52:44] [info] Day: 990
+[2026-08-13 16:52:44] [info] No genotypes recorded in the simulation at timestep, 1004
+[2026-08-13 16:52:44] [info] Day: 1020
+[2026-08-13 16:52:44] [info] No genotypes recorded in the simulation at timestep, 1035
+[2026-08-13 16:52:45] [info] Day: 1050
+[2026-08-13 16:52:45] [info] No genotypes recorded in the simulation at timestep, 1065
+[2026-08-13 16:52:45] [info] Day: 1080
+[2026-08-13 16:52:45] [info] No genotypes recorded in the simulation at timestep, 1096
+[2026-08-13 16:52:45] [info] Day: 1110
+[2026-08-13 16:52:46] [info] No genotypes recorded in the simulation at timestep, 1127
+[2026-08-13 16:52:46] [info] Day: 1140
+[2026-08-13 16:52:46] [info] No genotypes recorded in the simulation at timestep, 1155
+[2026-08-13 16:52:46] [info] Day: 1170
+[2026-08-13 16:52:46] [info] No genotypes recorded in the simulation at timestep, 1186
+[2026-08-13 16:52:47] [info] Day: 1200
+[2026-08-13 16:52:47] [info] No genotypes recorded in the simulation at timestep, 1216
+[2026-08-13 16:52:47] [info] Day: 1230
+[2026-08-13 16:52:47] [info] No genotypes recorded in the simulation at timestep, 1247
+[2026-08-13 16:52:47] [info] Day: 1260
+[2026-08-13 16:52:48] [info] No genotypes recorded in the simulation at timestep, 1277
+[2026-08-13 16:52:48] [info] Day: 1290
+[2026-08-13 16:52:48] [info] No genotypes recorded in the simulation at timestep, 1308
+[2026-08-13 16:52:48] [info] Day: 1320
+[2026-08-13 16:52:49] [info] No genotypes recorded in the simulation at timestep, 1339
+[2026-08-13 16:52:49] [info] Day: 1350
+[2026-08-13 16:52:49] [info] No genotypes recorded in the simulation at timestep, 1369
+[2026-08-13 16:52:49] [info] Day: 1380
+[2026-08-13 16:52:49] [info] No genotypes recorded in the simulation at timestep, 1400
+[2026-08-13 16:52:49] [info] Day: 1410
+[2026-08-13 16:52:50] [info] No genotypes recorded in the simulation at timestep, 1430
+[2026-08-13 16:52:50] [info] Day: 1440
+[2026-08-13 16:52:50] [info] No genotypes recorded in the simulation at timestep, 1461
+[2026-08-13 16:52:50] [info] Day: 1470
+[2026-08-13 16:52:51] [info] No genotypes recorded in the simulation at timestep, 1492
+[2026-08-13 16:52:51] [info] Day: 1500
+[2026-08-13 16:52:51] [info] No genotypes recorded in the simulation at timestep, 1520
+[2026-08-13 16:52:51] [info] Day: 1530
+[2026-08-13 16:52:51] [info] No genotypes recorded in the simulation at timestep, 1551
+[2026-08-13 16:52:51] [info] Day: 1560
+[2026-08-13 16:52:52] [info] No genotypes recorded in the simulation at timestep, 1581
+[2026-08-13 16:52:52] [info] Day: 1590
+[2026-08-13 16:52:52] [info] No genotypes recorded in the simulation at timestep, 1612
+[2026-08-13 16:52:52] [info] Day: 1620
+[2026-08-13 16:52:53] [info] No genotypes recorded in the simulation at timestep, 1642
+[2026-08-13 16:52:53] [info] Day: 1650
+[2026-08-13 16:52:53] [info] No genotypes recorded in the simulation at timestep, 1673
+[2026-08-13 16:52:53] [info] Day: 1680
+[2026-08-13 16:52:54] [info] No genotypes recorded in the simulation at timestep, 1704
+[2026-08-13 16:52:54] [info] Day: 1710
+[2026-08-13 16:52:54] [info] No genotypes recorded in the simulation at timestep, 1734
+[2026-08-13 16:52:54] [info] Day: 1740
+[2026-08-13 16:52:54] [info] No genotypes recorded in the simulation at timestep, 1765
+[2026-08-13 16:52:54] [info] Day: 1770
+[2026-08-13 16:52:55] [info] No genotypes recorded in the simulation at timestep, 1795
+[2026-08-13 16:52:55] [info] Day: 1800
+[2026-08-13 16:52:55] [info] No genotypes recorded in the simulation at timestep, 1826
+[2026-08-13 16:52:55] [info] Day: 1830
+[2026-08-13 16:52:56] [info] No genotypes recorded in the simulation at timestep, 1857
+[2026-08-13 16:52:56] [info] Day: 1860
+[2026-08-13 16:52:56] [info] No genotypes recorded in the simulation at timestep, 1886
+[2026-08-13 16:52:56] [info] Day: 1890
+[2026-08-13 16:52:56] [info] No genotypes recorded in the simulation at timestep, 1917
+[2026-08-13 16:52:56] [info] Day: 1920
+[2026-08-13 16:52:57] [info] No genotypes recorded in the simulation at timestep, 1947
+[2026-08-13 16:52:57] [info] Day: 1950
+[2026-08-13 16:52:57] [info] No genotypes recorded in the simulation at timestep, 1978
+[2026-08-13 16:52:57] [info] Day: 1980
+[2026-08-13 16:52:58] [info] No genotypes recorded in the simulation at timestep, 2008
+[2026-08-13 16:52:58] [info] Day: 2010
+[2026-08-13 16:52:58] [info] No genotypes recorded in the simulation at timestep, 2039
+[2026-08-13 16:52:58] [info] Day: 2040
+[2026-08-13 16:52:58] [info] Day: 2070
+[2026-08-13 16:52:59] [info] No genotypes recorded in the simulation at timestep, 2070
+[2026-08-13 16:52:59] [info] Day: 2100
+[2026-08-13 16:52:59] [info] No genotypes recorded in the simulation at timestep, 2100
+[2026-08-13 16:52:59] [info] Day: 2130
+[2026-08-13 16:52:59] [info] No genotypes recorded in the simulation at timestep, 2131
+[2026-08-13 16:53:00] [info] Day: 2160
+[2026-08-13 16:53:00] [info] No genotypes recorded in the simulation at timestep, 2161
+[2026-08-13 16:53:00] [info] Day: 2190
+[2026-08-13 16:53:00] [info] No genotypes recorded in the simulation at timestep, 2192
+[2026-08-13 16:53:01] [info] Day: 2220
+[2026-08-13 16:53:01] [info] No genotypes recorded in the simulation at timestep, 2223
+[2026-08-13 16:53:01] [info] Day: 2250
+[2026-08-13 16:53:01] [info] No genotypes recorded in the simulation at timestep, 2251
+[2026-08-13 16:53:01] [info] Day: 2280
+[2026-08-13 16:53:02] [info] No genotypes recorded in the simulation at timestep, 2282
+[2026-08-13 16:53:02] [info] Day: 2310
+[2026-08-13 16:53:02] [info] No genotypes recorded in the simulation at timestep, 2312
+[2026-08-13 16:53:02] [info] Day: 2340
+[2026-08-13 16:53:02] [info] No genotypes recorded in the simulation at timestep, 2343
+[2026-08-13 16:53:03] [info] Day: 2370
+[2026-08-13 16:53:03] [info] No genotypes recorded in the simulation at timestep, 2373
+[2026-08-13 16:53:03] [info] Day: 2400
+[2026-08-13 16:53:03] [info] No genotypes recorded in the simulation at timestep, 2404
+[2026-08-13 16:53:04] [info] Day: 2430
+[2026-08-13 16:53:04] [info] No genotypes recorded in the simulation at timestep, 2435
+[2026-08-13 16:53:04] [info] Day: 2460
+[2026-08-13 16:53:04] [info] No genotypes recorded in the simulation at timestep, 2465
+[2026-08-13 16:53:04] [info] Day: 2490
+[2026-08-13 16:53:05] [info] No genotypes recorded in the simulation at timestep, 2496
+[2026-08-13 16:53:05] [info] Day: 2520
+[2026-08-13 16:53:05] [info] No genotypes recorded in the simulation at timestep, 2526
+[2026-08-13 16:53:05] [info] Day: 2550
+[2026-08-13 16:53:05] [info] No genotypes recorded in the simulation at timestep, 2557
+[2026-08-13 16:53:06] [info] Day: 2580
+[2026-08-13 16:53:06] [info] No genotypes recorded in the simulation at timestep, 2588
+[2026-08-13 16:53:06] [info] Day: 2610
+[2026-08-13 16:53:06] [info] No genotypes recorded in the simulation at timestep, 2616
+[2026-08-13 16:53:07] [info] Day: 2640
+[2026-08-13 16:53:07] [info] No genotypes recorded in the simulation at timestep, 2647
+[2026-08-13 16:53:07] [info] Day: 2670
+[2026-08-13 16:53:07] [info] No genotypes recorded in the simulation at timestep, 2677
+[2026-08-13 16:53:07] [info] Day: 2700
+[2026-08-13 16:53:08] [info] No genotypes recorded in the simulation at timestep, 2708
+[2026-08-13 16:53:08] [info] Day: 2730
+[2026-08-13 16:53:08] [info] No genotypes recorded in the simulation at timestep, 2738
+[2026-08-13 16:53:08] [info] Day: 2760
+[2026-08-13 16:53:08] [info] No genotypes recorded in the simulation at timestep, 2769
+[2026-08-13 16:53:09] [info] Day: 2790
+[2026-08-13 16:53:09] [info] No genotypes recorded in the simulation at timestep, 2800
+[2026-08-13 16:53:09] [info] Day: 2820
+[2026-08-13 16:53:09] [info] No genotypes recorded in the simulation at timestep, 2830
+[2026-08-13 16:53:09] [info] Day: 2850
+[2026-08-13 16:53:10] [info] No genotypes recorded in the simulation at timestep, 2861
+[2026-08-13 16:53:10] [info] Day: 2880
+[2026-08-13 16:53:10] [info] No genotypes recorded in the simulation at timestep, 2891
+[2026-08-13 16:53:10] [info] Day: 2910
+[2026-08-13 16:53:11] [info] No genotypes recorded in the simulation at timestep, 2922
+[2026-08-13 16:53:11] [info] Day: 2940
+[2026-08-13 16:53:11] [info] No genotypes recorded in the simulation at timestep, 2953
+[2026-08-13 16:53:11] [info] Day: 2970
+[2026-08-13 16:53:11] [info] No genotypes recorded in the simulation at timestep, 2981
+[2026-08-13 16:53:12] [info] Day: 3000
+[2026-08-13 16:53:12] [info] No genotypes recorded in the simulation at timestep, 3012
+[2026-08-13 16:53:12] [info] Day: 3030
+[2026-08-13 16:53:12] [info] No genotypes recorded in the simulation at timestep, 3042
+[2026-08-13 16:53:13] [info] Day: 3060
+[2026-08-13 16:53:13] [info] No genotypes recorded in the simulation at timestep, 3073
+[2026-08-13 16:53:13] [info] Day: 3090
+[2026-08-13 16:53:13] [info] No genotypes recorded in the simulation at timestep, 3103
+[2026-08-13 16:53:13] [info] Day: 3120
+[2026-08-13 16:53:14] [info] No genotypes recorded in the simulation at timestep, 3134
+[2026-08-13 16:53:14] [info] Day: 3150
+[2026-08-13 16:53:14] [info] No genotypes recorded in the simulation at timestep, 3165
+[2026-08-13 16:53:14] [info] Day: 3180
+[2026-08-13 16:53:15] [info] No genotypes recorded in the simulation at timestep, 3195
+[2026-08-13 16:53:15] [info] Day: 3210
+[2026-08-13 16:53:15] [info] No genotypes recorded in the simulation at timestep, 3226
+[2026-08-13 16:53:15] [info] Day: 3240
+[2026-08-13 16:53:15] [info] No genotypes recorded in the simulation at timestep, 3256
+[2026-08-13 16:53:16] [info] Day: 3270
+[2026-08-13 16:53:16] [info] No genotypes recorded in the simulation at timestep, 3287
+[2026-08-13 16:53:16] [info] Day: 3300
+[2026-08-13 16:53:16] [info] No genotypes recorded in the simulation at timestep, 3318
+[2026-08-13 16:53:17] [info] Day: 3330
+[2026-08-13 16:53:17] [info] No genotypes recorded in the simulation at timestep, 3347
+[2026-08-13 16:53:17] [info] Day: 3360
+[2026-08-13 16:53:17] [info] No genotypes recorded in the simulation at timestep, 3378
+[2026-08-13 16:53:17] [info] Day: 3390
+[2026-08-13 16:53:18] [info] No genotypes recorded in the simulation at timestep, 3408
+[2026-08-13 16:53:18] [info] Day: 3420
+[2026-08-13 16:53:18] [info] No genotypes recorded in the simulation at timestep, 3439
+[2026-08-13 16:53:18] [info] Day: 3450
+[2026-08-13 16:53:19] [info] No genotypes recorded in the simulation at timestep, 3469
+[2026-08-13 16:53:19] [info] Day: 3480
+[2026-08-13 16:53:19] [info] No genotypes recorded in the simulation at timestep, 3500
+[2026-08-13 16:53:19] [info] Day: 3510
+[2026-08-13 16:53:19] [info] No genotypes recorded in the simulation at timestep, 3531
+[2026-08-13 16:53:20] [info] Day: 3540
+[2026-08-13 16:53:20] [info] No genotypes recorded in the simulation at timestep, 3561
+[2026-08-13 16:53:20] [info] Day: 3570
+[2026-08-13 16:53:20] [info] No genotypes recorded in the simulation at timestep, 3592
+[2026-08-13 16:53:20] [info] Day: 3600
+[2026-08-13 16:53:21] [info] No genotypes recorded in the simulation at timestep, 3622
+[2026-08-13 16:53:21] [info] Day: 3630
+[2026-08-13 16:53:21] [info] No genotypes recorded in the simulation at timestep, 3653
+[2026-08-13 16:53:21] [info] Day: 3660
+[2026-08-13 16:53:22] [info] No genotypes recorded in the simulation at timestep, 3684
+[2026-08-13 16:53:22] [info] Day: 3690
+[2026-08-13 16:53:22] [info] No genotypes recorded in the simulation at timestep, 3712
+[2026-08-13 16:53:22] [info] Day: 3720
+[2026-08-13 16:53:23] [info] No genotypes recorded in the simulation at timestep, 3743
+[2026-08-13 16:53:23] [info] Day: 3750
+[2026-08-13 16:53:23] [info] No genotypes recorded in the simulation at timestep, 3773
+[2026-08-13 16:53:23] [info] Day: 3780
+[2026-08-13 16:53:23] [info] No genotypes recorded in the simulation at timestep, 3804
+[2026-08-13 16:53:24] [info] Day: 3810
+[2026-08-13 16:53:24] [info] No genotypes recorded in the simulation at timestep, 3834
+[2026-08-13 16:53:24] [info] Day: 3840
+[2026-08-13 16:53:24] [info] No genotypes recorded in the simulation at timestep, 3865
+[2026-08-13 16:53:24] [info] Day: 3870
+[2026-08-13 16:53:25] [info] No genotypes recorded in the simulation at timestep, 3896
+[2026-08-13 16:53:25] [info] Day: 3900
+[2026-08-13 16:53:25] [info] No genotypes recorded in the simulation at timestep, 3926
+[2026-08-13 16:53:25] [info] Day: 3930
+[2026-08-13 16:53:26] [info] No genotypes recorded in the simulation at timestep, 3957
+[2026-08-13 16:53:26] [info] Day: 3960
+[2026-08-13 16:53:26] [info] No genotypes recorded in the simulation at timestep, 3987
+[2026-08-13 16:53:26] [info] Day: 3990
+[2026-08-13 16:53:27] [info] No genotypes recorded in the simulation at timestep, 4018
+[2026-08-13 16:53:27] [info] Day: 4020
+[2026-08-13 16:53:27] [info] No genotypes recorded in the simulation at timestep, 4049
+[2026-08-13 16:53:27] [info] Day: 4050
+[2026-08-13 16:53:28] [info] No genotypes recorded in the simulation at timestep, 4077
+[2026-08-13 16:53:28] [info] Day: 4080
+[2026-08-13 16:53:28] [info] No genotypes recorded in the simulation at timestep, 4108
+[2026-08-13 16:53:28] [info] Day: 4110
+[2026-08-13 16:53:28] [info] No genotypes recorded in the simulation at timestep, 4138
+[2026-08-13 16:53:28] [info] Day: 4140
+[2026-08-13 16:53:29] [info] No genotypes recorded in the simulation at timestep, 4169
+[2026-08-13 16:53:29] [info] Day: 4170
+[2026-08-13 16:53:29] [info] No genotypes recorded in the simulation at timestep, 4199
+[2026-08-13 16:53:29] [info] Day: 4200
+[2026-08-13 16:53:30] [info] Day: 4230
+[2026-08-13 16:53:30] [info] No genotypes recorded in the simulation at timestep, 4230
+[2026-08-13 16:53:30] [info] Day: 4260
+[2026-08-13 16:53:30] [info] No genotypes recorded in the simulation at timestep, 4261
+[2026-08-13 16:53:31] [info] Day: 4290
+[2026-08-13 16:53:31] [info] No genotypes recorded in the simulation at timestep, 4291
+[2026-08-13 16:53:31] [info] Day: 4320
+[2026-08-13 16:53:31] [info] No genotypes recorded in the simulation at timestep, 4322
+[2026-08-13 16:53:32] [info] Day: 4350
+[2026-08-13 16:53:32] [info] No genotypes recorded in the simulation at timestep, 4352
+[2026-08-13 16:53:32] [info] Day: 4380
+[2026-08-13 16:53:32] [info] No genotypes recorded in the simulation at timestep, 4383
+[2026-08-13 16:53:32] [info] Day: 4410
+[2026-08-13 16:53:33] [info] No genotypes recorded in the simulation at timestep, 4414
+[2026-08-13 16:53:33] [info] Day: 4440
+[2026-08-13 16:53:33] [info] No genotypes recorded in the simulation at timestep, 4442
+[2026-08-13 16:53:33] [info] Day: 4470
+[2026-08-13 16:53:34] [info] No genotypes recorded in the simulation at timestep, 4473
+[2026-08-13 16:53:34] [info] Day: 4500
+[2026-08-13 16:53:34] [info] No genotypes recorded in the simulation at timestep, 4503
+[2026-08-13 16:53:34] [info] Day: 4530
+[2026-08-13 16:53:34] [info] No genotypes recorded in the simulation at timestep, 4534
+[2026-08-13 16:53:35] [info] Day: 4560
+[2026-08-13 16:53:35] [info] No genotypes recorded in the simulation at timestep, 4564
+[2026-08-13 16:53:35] [info] Day: 4590
+[2026-08-13 16:53:35] [info] No genotypes recorded in the simulation at timestep, 4595
+[2026-08-13 16:53:36] [info] Day: 4620
+[2026-08-13 16:53:36] [info] No genotypes recorded in the simulation at timestep, 4626
+[2026-08-13 16:53:36] [info] Day: 4650
+[2026-08-13 16:53:36] [info] No genotypes recorded in the simulation at timestep, 4656
+[2026-08-13 16:53:37] [info] Day: 4680
+[2026-08-13 16:53:37] [info] No genotypes recorded in the simulation at timestep, 4687
+[2026-08-13 16:53:37] [info] Day: 4710
+[2026-08-13 16:53:37] [info] No genotypes recorded in the simulation at timestep, 4717
+[2026-08-13 16:53:38] [info] Day: 4740
+[2026-08-13 16:53:38] [info] No genotypes recorded in the simulation at timestep, 4748
+[2026-08-13 16:53:38] [info] Perform after run events
+Memory Usage: 230.62 MB
