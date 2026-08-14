@@ -1,7 +1,10 @@
 # Ignore data, generatedm and output directories
 DATA/
 generated/
-output/
+**/calibration*/input/
+**/calibration*/output/
+**/validation*/input/
+**/validation*/output/
 
 # Ignore build/python artifacts
 *.egg-info/
