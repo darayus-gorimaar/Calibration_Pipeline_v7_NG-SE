@@ -111,7 +111,7 @@ population_demographic:
       0.001,
     ]
   # Scaling factor for the population in the model (based on data)
-  artificial_rescaling_of_population_size: 0.1
+  artificial_rescaling_of_population_size: 1
 
 # ---------------------------------------------------------------
 # 5. Raster and Geographic Settings

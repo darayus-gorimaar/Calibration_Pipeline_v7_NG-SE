@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N sgj_#JOB_NAME#
+#PBS -l select=1:ncpus=1#HOST_NAME#
+#PBS -l walltime=240:00:00
+#PBS -q #QUEUE_NAME#
+
+cd "$PBS_O_WORKDIR" || exit 1
+
+# Decode CMD passed from submit script (base64 avoids -v parsing issues)
+if [[ -n "${CMD_B64:-}" ]]; then
+  CMD="$(printf '%s' "$CMD_B64" | base64 -d)"
+fi
+
+echo "Running job $INDEX"
+echo "Command: $CMD"
+
+# Run exactly as written (supports redirects, pipes, env vars, etc.)
+bash -lc "$CMD"

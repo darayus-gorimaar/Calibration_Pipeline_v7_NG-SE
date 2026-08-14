@@ -1,0 +1,93 @@
+#!/bin/bash
+#PBS -N sbj_#JOB_NAME#
+#PBS -l select=1:ncpus=1#HOST_NAME#
+#PBS -l walltime=240:00:00
+#PBS -q #QUEUE_NAME#
+#PBS -o log/submit_all_#JOB_NAME#.output
+#PBS -e log/submit_all_#JOB_NAME#.error
+
+cd "$PBS_O_WORKDIR" || exit 1
+
+CMD_FILE="script/cmds_#JOB_NAME#.txt"
+USER_NAME=$(whoami)        # or hardcode if needed
+MAX_ACTIVE_JOBS=1230        # target number of concurrently queued/running jobs
+SLEEP=15                   # how often to check job count (in seconds)
+
+mkdir -p log
+
+# Extract yml base name from a CMD line (token after -i / -i=...)
+get_yml_base () {
+  local cmd="$1"
+  local yml=""
+
+  yml="$(awk '
+    {
+      for (i=1; i<=NF; i++) {
+        if ($i=="-i" && (i+1)<=NF) { print $(i+1); exit }
+        if ($i ~ /^-i=/) { sub(/^-i=/, "", $i); print $i; exit }
+      }
+    }
+  ' <<< "$cmd")"
+
+  # Strip surrounding quotes if any
+  yml="${yml%\"}"; yml="${yml#\"}"
+  yml="${yml%\'}"; yml="${yml#\'}"
+
+  [[ -z "$yml" ]] && { echo ""; return 0; }
+
+  # Keep only filename, strip .yml / .yaml
+  yml="$(basename -- "$yml")"
+  yml="${yml%.yml}"
+  yml="${yml%.yaml}"
+
+  # Sanitize (keep letters, numbers, dot, dash, underscore)
+  yml="$(sed 's/[^A-Za-z0-9._-]/_/g' <<< "$yml")"
+  echo "$yml"
+}
+
+# Function to get the number of running jobs under your user (filtered)
+get_job_count() {
+  qstat -u "$USER_NAME" \
+  | awk -v u="$USER_NAME" \
+        -v q="#QUEUE_NAME#" \
+        -v j="single_job_#JOB_NAME#" \
+        'NR>2 && $2==u && $3==q && $4==j && $10=="R" {c++} END{print c+0}'
+}
+
+INDEX=0
+
+while IFS= read -r CMD || [[ -n "$CMD" ]]; do
+  [[ -z "$CMD" || "$CMD" =~ ^[[:space:]]*# ]] && continue
+
+  # Throttle job submission
+  JOB_COUNT="$(get_job_count)"
+  while [ "$JOB_COUNT" -ge "$MAX_ACTIVE_JOBS" ]; do
+    echo "[$(date)] $JOB_COUNT jobs active, waiting..."
+    sleep "$SLEEP"
+    JOB_COUNT="$(get_job_count)"
+  done
+
+  base="$(get_yml_base "$CMD")"
+  [[ -z "$base" ]] && base="idx_${INDEX}"
+
+  # Avoid overwriting if duplicate base names exist
+  out="log/${base}.output"
+  err="log/${base}.error"
+  if [[ -e "$out" || -e "$err" ]]; then
+    out="log/${base}_${INDEX}.output"
+    err="log/${base}_${INDEX}.error"
+  fi
+
+  # Make CMD safe for -v by base64 encoding (handles spaces, >, &, etc.)
+  CMD_B64="$(printf '%s' "$CMD" | base64 -w 0)"
+
+  echo "Submitting job $INDEX: $CMD"
+  qsub -o "$out" -e "$err" \
+      -v INDEX="$INDEX",CMD_B64="$CMD_B64" \
+      script/job_template_#JOB_NAME#.pbs
+
+  ((INDEX++))
+  sleep 0.1
+done < "$CMD_FILE"
+
+echo "All jobs submitted ($INDEX)."

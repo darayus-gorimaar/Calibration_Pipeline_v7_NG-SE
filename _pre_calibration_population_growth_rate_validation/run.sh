@@ -3,7 +3,7 @@
 cd /work/tuv89272/Calibration_Pipeline_v7_NG-SE/_pre_calibration_population_growth_rate_validation || exit 1
 
 nohup ./bin/MalaSim \
--i input/input_population_bins_beta_zero_pop_0.001.yml \
+-i input/input_population_bins_beta_zero_pop_0.25.yml \
 -r SQLiteMonthlyReporter \
 -o output/pop_validation \
 -j 0 \

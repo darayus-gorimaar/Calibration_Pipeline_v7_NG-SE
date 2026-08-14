@@ -1,6 +1,7 @@
-# Ignore data and output directories
+# Ignore data, generatedm and output directories
 DATA/
 generated/
+output/
 
 # Ignore build/python artifacts
 *.egg-info/

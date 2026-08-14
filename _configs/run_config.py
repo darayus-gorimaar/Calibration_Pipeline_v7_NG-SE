@@ -10,7 +10,7 @@ validation_replicates = 15
 # population scales
 pre_calibration_sim_scale = 1                           # Full Value: 1
 pre_calibration_population_validation_scale = 0.25      # Full Value: 0.25
-calibration_population_scale = 0.01                        # Full Value: 1
+calibration_population_scale = 1                        # Full Value: 1
 validation_population_scale = 0.001                      # Full Value: 0.25
 
 ###############################################################
@@ -29,7 +29,8 @@ PRE_CALIBRATION_RUN_INPUTS_DIR = f"{pre_calibration_run_path}/input"
 pre_calibration_analysis_path = f"{pre_calibration_run_path}/analysis"
 
 ''' Calibration Paths '''
-calibration_path = f"calibration_{run_number}_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
+calibration_path = f"calibration_{run_number}_{calibration_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
+# calibration_path = f"calibration_{run_number}_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
 CALIBRATION_RUN_INPUTS_DIR = f"{calibration_path}/input"
 calibration_analysis_path = f"{calibration_path}/analysis"
 

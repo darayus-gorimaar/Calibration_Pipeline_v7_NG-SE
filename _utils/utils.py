@@ -163,8 +163,8 @@ def write_commands_to_script_file(cmds, script_path, job_name):
     print(f"Wrote {len(cmds)} commands to {script_file}")
     return script_file
 
-def prepare_job_script_and_submit_jobs_script(queue_name, host_name, script_path, job_name, max_active_jobs = None):
-    with open("job_template.template", "r", encoding="utf-8") as f:
+def prepare_job_script_and_submit_jobs_script(queue_name, host_name, script_path, job_name, max_active_jobs = None, template_path = Path("_templates")):
+    with open(f"{template_path}/job_template.template", "r", encoding="utf-8") as f:
         job_template_text = f.read()
         job_template_text = job_template_text.replace("#QUEUE_NAME#", queue_name).replace("#HOST_NAME#", host_name)
         job_template_text = job_template_text.replace("#JOB_NAME#", job_name)
@@ -172,7 +172,7 @@ def prepare_job_script_and_submit_jobs_script(queue_name, host_name, script_path
     with open(script_path / f"job_template_{job_name}.pbs", "w", encoding="utf-8") as f:
         f.write(job_template_text)
         
-    with open("submit_jobs.template", "r", encoding="utf-8") as f:
+    with open(f"{template_path}/submit_jobs.template", "r", encoding="utf-8") as f:
         submit_template_text = f.read()
         submit_template_text = submit_template_text.replace("#QUEUE_NAME#", queue_name).replace("#HOST_NAME#", host_name)
         submit_template_text = submit_template_text.replace("#JOB_NAME#", job_name)
