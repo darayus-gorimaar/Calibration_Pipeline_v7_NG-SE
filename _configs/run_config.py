@@ -30,16 +30,12 @@ pre_calibration_analysis_path = f"{pre_calibration_run_path}/analysis"
 
 ''' Calibration Paths '''
 calibration_path = f"calibration_{run_number}_{calibration_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
-# calibration_path = f"calibration_{run_number}_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
 CALIBRATION_RUN_INPUTS_DIR = f"{calibration_path}/input"
 calibration_analysis_path = f"{calibration_path}/analysis"
 
 ''' Validation Paths '''
-# validation_path = f"validation_test"
-# validation_path = f"validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
-# validation_path = f"validation_1_copy_zero_beta"
-validation_path = f"validation_1_copy_new_treatment_seeking_zero_beta" 
-# validation_path = f"validation_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
+validation_path = f"validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
+
 VALIDATION_RUN_INPUTS_DIR = f"{validation_path}/input"
 log_path = f"{validation_path}/log"
 validation_output_path = f"{validation_path}/output"
