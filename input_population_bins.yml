@@ -70,24 +70,91 @@ population_demographic:
   # Crude birth rate
   birth_rate: #BIRTH_RATE#
 
-  # Malaria-adjusted all-cause death rate by age class (to be updated with specific country data)
+  # # Malaria-adjusted all-cause death rate by age class (to be updated with specific country data)
+  # death_rate_by_age_class:
+  #   [
+  #     0.04814,
+  #     0.041605,
+  #     0.05207,
+  #     0.048057,
+  #     0.048057,
+  #     0.00497,
+  #     0.00497,
+  #     0.00497,
+  #     0.00497,
+  #     0.00354,
+  #     0.00354,
+  #     0.00758,
+  #     0.01113,
+  #     0.01113,
+  #     0.01113,
+  #   ]
+
+  # # ACTUAL NIGERIA DEATH RATE DATA
+  # # SOURCE: UN World Population Prospects
+  # death_rate_by_age_class:
+  #   [
+  #     0.078290512,
+  #     0.012793172,
+  #     0.012034176,
+  #     0.011319482,
+  #     0.010560625,
+  #     0.009687988,
+  #     0.008670528,
+  #     0.007540572,
+  #     0.006420691,
+  #     0.005422024,
+  #     0.004637288,
+  #     0.015296932,
+  #     0.023625282,
+  #     0.350267593,
+  #     0.999299658,
+  #   ]
+
+  # ACTUAL NIGERIA DEATH RATE DATA MINUS MALARIA DEATH RATE
+  # SOURCE: UN World Population Prospects for nigeria total death rate
+  # SOURCE: INSTITUTE FOR HEALTH METRICS AND EVALUATION for nigeria malaria death rate
+
+  # 1-year average probability of dying across all ages in each bin MINUS 1-year average probability of dying OF MALARIA (2023) across all ages in each bin
+  #
+  # death_rate_by_age_class:
+  #   [
+  #     0.0643382376,
+  #     0.0064087298,
+  #     0.0062750807,
+  #     0.0060590907,
+  #     0.0057493507,
+  #     0.0082614810,
+  #     0.0075483610,
+  #     0.0066314110,
+  #     0.0056439610,
+  #     0.0047197610,
+  #     0.0041457598,
+  #     0.0033957873,
+  #     0.0042502454,
+  #     0.0097276427,
+  #     0.1538521491,
+  #   ]
+
+  # 1-year average probability of dying across all ages in each bin MINUS 1-year average probability of dying OF MALARIA (2011-23 average) across all ages in each bin
+  #
   death_rate_by_age_class:
     [
-      0.04814,
-      0.041605,
-      0.05207,
-      0.048057,
-      0.048057,
-      0.00497,
-      0.00497,
-      0.00497,
-      0.00497,
-      0.00354,
-      0.00354,
-      0.00758,
-      0.01113,
-      0.01113,
-      0.01113,
+      0.0731601992,
+      0.0093989513,
+      0.0087198069,
+      0.0080051130,
+      0.0072462554,
+      0.0093722795,
+      0.0083548187,
+      0.0072248626,
+      0.0061049818,
+      0.0051063149,
+      0.0044910983,
+      0.0037001664,
+      0.0045362588,
+      0.0103120049,
+      0.1576817603,
     ]
 
   # Probability of death for patients who are not treated or experience a treatment failure

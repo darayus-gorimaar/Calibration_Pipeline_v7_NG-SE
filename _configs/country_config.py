@@ -9,7 +9,7 @@ TARGET_POPULATION_CALIBRATION_YEAR = 26_716_457      # 2024
 TARGET_POPULATION_INITIAL_YEAR = 20_357_567          # 2011
 
 target_growth_rate = 0.02113 # From Excel sheet
-birth_rate = 36.2 / 1000
+birth_rate = 33.5 / 1000
 
 # Paths
 template_path = "calibration_template_files"
