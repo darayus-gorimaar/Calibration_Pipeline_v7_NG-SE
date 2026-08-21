@@ -36,8 +36,8 @@ calibration_analysis_path = f"{calibration_path}/analysis"
 
 ''' Validation Paths '''
 validation_runs_path = "validation_runs"
-# validation_path = f"{validation_runs_path}/validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
-validation_path = f"{validation_runs_path}/validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates_NO_IMMUNITY_PARAMS"
+validation_path = f"{validation_runs_path}/validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
+# validation_path = f"{validation_runs_path}/validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates_NO_IMMUNITY_PARAMS"
 # validation_path = pre_calibration_run_path
 
 VALIDATION_RUN_INPUTS_DIR = f"{validation_path}/input"
