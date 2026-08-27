@@ -15,7 +15,9 @@ validation_population_scale = 0.25                      # Full Value: 0.25
 
 ###############################################################
 
-run_number = 1 
+# run_number = 1 # Initial Population 20.36M
+run_number = 2 # Initial Population 21.52M
+# run_number = 3 # Initial Population 20.64M
 
 ###############################################################
 
@@ -24,7 +26,7 @@ pre_sim_run_path = f"_pre_sim_200k_pop_run"
 PRE_SIM_RUN_PATH_INPUTS_DIR = f"{pre_sim_run_path}/input"
 pre_sim_analysis_path = f"{pre_sim_run_path}/analysis"
 
-pre_calibration_run_path = f"_pre_calibration_population_growth_rate_validation"
+pre_calibration_run_path = f"_pre_calibration_population_growth_rate_validation_{run_number}"
 PRE_CALIBRATION_RUN_INPUTS_DIR = f"{pre_calibration_run_path}/input"
 pre_calibration_analysis_path = f"{pre_calibration_run_path}/analysis"
 
