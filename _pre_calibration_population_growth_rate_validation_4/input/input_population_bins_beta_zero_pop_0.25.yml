@@ -30,13 +30,13 @@ model_settings:
 # ---------------------------------------------------------------
 simulation_timeframe:
   # Simulation starting date (calibration year minus 11 years of burn-in)
-  starting_date: #INITIAL_YEAR#/1/1
+  starting_date: 2011/1/1
 
   # Start of comparison period (mutations start in 2010)
-  start_of_comparison_period: #INITIAL_YEAR#/1/1
+  start_of_comparison_period: 2011/1/1
 
   # Simulation ending date
-  ending_date: #CALIBRATION_YEAR#/1/1
+  ending_date: 2024/1/1
 
   # Day to start collecting data
   start_collect_data_day: 0
@@ -68,7 +68,7 @@ population_demographic:
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 25, 35, 45, 55, 65, 100]
 
   # Crude birth rate
-  birth_rate: #BIRTH_RATE#
+  birth_rate: 0.0335
 
   # # Malaria-adjusted all-cause death rate by age class (to be updated with specific country data)
   # death_rate_by_age_class:
@@ -199,7 +199,7 @@ population_demographic:
       0.001,
     ]
   # Scaling factor for the population in the model (based on data)
-  artificial_rescaling_of_population_size: #POPULATION_SCALE#
+  artificial_rescaling_of_population_size: 0.25
 
 # ---------------------------------------------------------------
 # 5. Raster and Geographic Settings
@@ -237,21 +237,21 @@ spatial_settings:
       ]
     # Adjusted population raster to account for burn-in up to 2009 start
     #    population_raster: "sample_inputs/kag_init_pop.asc"
-    population_raster: "#INPUT_PATH#/#COUNTRY_CODE#_initialpopulation#POPULATION#.asc"
+    population_raster: "input/ng-se_population_backwards_projected_2011_21.52M.asc"
 
     administrative_boundaries:
       - name: district
-        raster: #INPUT_PATH#/#COUNTRY_CODE#_district.asc
+        raster: input/ng-se_district_seq1.asc
 
     # Raster files defining treatments
-    p_treatment_under_5_raster: "#INPUT_PATH#/#COUNTRY_CODE#_treatment_seeking_normalized#ACCESS_RATE#.asc"
-    p_treatment_over_5_raster: "#INPUT_PATH#/#COUNTRY_CODE#_treatment_seeking_normalized#ACCESS_RATE#.asc"
+    p_treatment_under_5_raster: "input/ng-se_treatment_seeking_normalized.asc"
+    p_treatment_over_5_raster: "input/ng-se_treatment_seeking_normalized.asc"
 
     # Raster file containing the calibrated beta value
-    beta_raster: "#INPUT_PATH#/#COUNTRY_CODE#_beta#BETA#.asc"
+    beta_raster: "input/ng-se_beta_zero.asc"
 
     # Raster file containing the travel time / friction surface
-    travel_raster: "#INPUT_PATH#/#COUNTRY_CODE#_traveltime.asc"
+    travel_raster: "input/ng-se_traveltime.asc"
 
     # Cell size used by raster, in square kilometers
     cell_size: 5
@@ -309,7 +309,7 @@ seasonality_settings:
   mode: pattern
   pattern:
     admin_level: district
-    filename: #INPUT_PATH#/#COUNTRY_CODE#_seasonality.csv
+    filename: input/ng-se_seasonality.csv
     period: 365
 
 # ---------------------------------------------------------------

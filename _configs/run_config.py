@@ -16,8 +16,10 @@ validation_population_scale = 0.25                      # Full Value: 0.25
 ###############################################################
 
 # run_number = 1 # Initial Population 20.36M
-run_number = 2 # Initial Population 21.52M
+# run_number = 2 # Initial Population 21.52M
 # run_number = 3 # Initial Population 20.64M
+
+run_number = 4 # Initial Population 21.52M, new death rate old age bin value
 
 ###############################################################
 

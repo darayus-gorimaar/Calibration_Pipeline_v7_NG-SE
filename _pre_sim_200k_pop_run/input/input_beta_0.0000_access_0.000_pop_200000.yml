@@ -115,7 +115,7 @@ population_demographic:
   # SOURCE: UN World Population Prospects for nigeria total death rate
   # SOURCE: INSTITUTE FOR HEALTH METRICS AND EVALUATION for nigeria malaria death rate
 
-  # 1-year average probability of dying across all ages in each bin MINUS 1-year average probability of dying OF MALARIA (2023) across all ages in each bin
+  # 1-year average probability of dying across all ages in each bin (2023) MINUS 1-year average probability of dying OF MALARIA (2011-23 average) across all ages in each bin
   #
   # death_rate_by_age_class:
   #   [
@@ -136,8 +136,29 @@ population_demographic:
   #     0.1538521491,
   #   ]
 
-  # 1-year average probability of dying across all ages in each bin MINUS 1-year average probability of dying OF MALARIA (2011-23 average) across all ages in each bin
+  # 1-year average probability of dying across all ages in each bin (2011-23 average) MINUS 1-year average probability of dying OF MALARIA (2011-23 average) across all ages in each bin
   #
+  # death_rate_by_age_class:
+  #   [
+  #     0.0731601992,
+  #     0.0093989513,
+  #     0.0087198069,
+  #     0.0080051130,
+  #     0.0072462554,
+  #     0.0093722795,
+  #     0.0083548187,
+  #     0.0072248626,
+  #     0.0061049818,
+  #     0.0051063149,
+  #     0.0044910983,
+  #     0.0037001664,
+  #     0.0045362588,
+  #     0.0103120049,
+  #     0.1576817603,
+  #   ]
+
+  # 1-year average probability of dying across all ages in each bin (2011-23 average) MINUS 1-year average probability of dying OF MALARIA (2011-23 average) across all ages in each bin
+  # WITH 60+ age bin death rate overwritten with WHO life expectancy at age 60+ data https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy
   death_rate_by_age_class:
     [
       0.0731601992,
@@ -154,7 +175,7 @@ population_demographic:
       0.0037001664,
       0.0045362588,
       0.0103120049,
-      0.1576817603,
+      0.0516076714,
     ]
 
   # Probability of death for patients who are not treated or experience a treatment failure

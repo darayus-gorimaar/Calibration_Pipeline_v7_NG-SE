@@ -1,0 +1,9 @@
+# Packages actually imported by this project
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+scikit-learn
+jenkspy
+PyYAML

@@ -8,3 +8,6 @@ validation*/
 *.egg-info/
 __pycache__/
 .ipynb_checkpoints/
+
+# Ignore virtual environments
+.venv-ng-se/

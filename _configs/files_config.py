@@ -10,7 +10,6 @@ pfpr_file_name = f"{country_code}_pfpr_{calibration_year}.asc"
 # pfpr_file_name = f"{country_code}_pfpr2to10_{calibration_year}.asc" 
 
 district_raw_file_name = f"{country_code}_district.asc"  
-district_raw_file_name = f"{country_code}_district.asc"  
 
 
 ########################################################################
@@ -38,8 +37,8 @@ pfpr_raster_path = f"{data_path}/{country_code}_pfpr_{calibration_year}.asc"
 
 #/generated/
 # initial_population_projected_raster_path = f"{generated_data_path}/{country_code}_population_backwards_projected_{initial_year}_20.36M.asc"
-# initial_population_projected_raster_path = f"{generated_data_path}/{country_code}_population_backwards_projected_{initial_year}_21.52M.asc"
-initial_population_projected_raster_path = f"{generated_data_path}/{country_code}_population_backwards_projected_{initial_year}_20.64M.asc"
+initial_population_projected_raster_path = f"{generated_data_path}/{country_code}_population_backwards_projected_{initial_year}_21.52M.asc"
+# initial_population_projected_raster_path = f"{generated_data_path}/{country_code}_population_backwards_projected_{initial_year}_20.64M.asc"
 projected_population_calibration_year_raster_path = f"{generated_data_path}/{country_code}_population_projected_{calibration_year}.asc"
 
 zero_beta_raster_path = f"{generated_data_path}/{country_code}_beta_zero.asc"
