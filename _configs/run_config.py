@@ -15,12 +15,14 @@ validation_population_scale = 0.25                      # Full Value: 0.25
 
 ###############################################################
 
-# run_number = 1 # Initial Population 20.36M
-# run_number = 2 # Initial Population 21.52M
-# run_number = 3 # Initial Population 20.64M
+# # run_number = 1 # Initial Population 20.36M
+# # run_number = 2 # Initial Population 21.52M
+# # run_number = 3 # Initial Population 20.64M
 
-run_number = 4 # Initial Population 21.52M, new death rate old age bin value
+# #### NEW DEATH RATE OLD AGE BIN VALUE
 
+# run_number = 4 # Initial Population 20.36M
+# # run_number = 5 Initial Population 21.12M
 ###############################################################
 
 ''' Pre-calibration Paths '''
@@ -28,21 +30,19 @@ pre_sim_run_path = f"_pre_sim_200k_pop_run"
 PRE_SIM_RUN_PATH_INPUTS_DIR = f"{pre_sim_run_path}/input"
 pre_sim_analysis_path = f"{pre_sim_run_path}/analysis"
 
-pre_calibration_run_path = f"_pre_calibration_population_growth_rate_validation_{run_number}"
+pre_calibration_run_path = f"_pre_calibration_population_growth_rate_validation_init_pop_{initial_population_projected_raster_path.split('_')[-2]}"
 PRE_CALIBRATION_RUN_INPUTS_DIR = f"{pre_calibration_run_path}/input"
 pre_calibration_analysis_path = f"{pre_calibration_run_path}/analysis"
 
 ''' Calibration Paths '''
 calibration_runs_path = "calibration_runs"
-calibration_path = f"{calibration_runs_path}/calibration_{run_number}_{calibration_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
+calibration_path = f"{calibration_runs_path}/calibration_init_pop_{initial_population_projected_raster_path.split('_')[-2]}_{calibration_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
 CALIBRATION_RUN_INPUTS_DIR = f"{calibration_path}/input"
 calibration_analysis_path = f"{calibration_path}/analysis"
 
 ''' Validation Paths '''
 validation_runs_path = "validation_runs"
-validation_path = f"{validation_runs_path}/validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
-# validation_path = f"{validation_runs_path}/validation_{run_number}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates_NO_IMMUNITY_PARAMS"
-# validation_path = pre_calibration_run_path
+validation_path = f"{validation_runs_path}/validation_-nit_pop_{initial_population_projected_raster_path.split('_')[-2]}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
 
 VALIDATION_RUN_INPUTS_DIR = f"{validation_path}/input"
 log_path = f"{validation_path}/log"
