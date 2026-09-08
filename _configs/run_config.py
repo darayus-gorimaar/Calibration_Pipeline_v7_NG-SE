@@ -30,19 +30,19 @@ pre_sim_run_path = f"_pre_sim_200k_pop_run"
 PRE_SIM_RUN_PATH_INPUTS_DIR = f"{pre_sim_run_path}/input"
 pre_sim_analysis_path = f"{pre_sim_run_path}/analysis"
 
-pre_calibration_run_path = f"_pre_calibration_population_growth_rate_validation_init_pop_{initial_population_projected_raster_path.split('_')[-2]}"
+pre_calibration_run_path = f"_pre_calibration_population_growth_rate_validation_init_pop_{initial_population_projected_raster_path.split('_')[-1]}"
 PRE_CALIBRATION_RUN_INPUTS_DIR = f"{pre_calibration_run_path}/input"
 pre_calibration_analysis_path = f"{pre_calibration_run_path}/analysis"
 
 ''' Calibration Paths '''
 calibration_runs_path = "calibration_runs"
-calibration_path = f"{calibration_runs_path}/calibration_init_pop_{initial_population_projected_raster_path.split('_')[-2]}_{calibration_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
+calibration_path = f"{calibration_runs_path}/calibration_init_pop_{initial_population_projected_raster_path.split('_')[-1]}_{calibration_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{calibration_replicates}_replicates"
 CALIBRATION_RUN_INPUTS_DIR = f"{calibration_path}/input"
 calibration_analysis_path = f"{calibration_path}/analysis"
 
 ''' Validation Paths '''
 validation_runs_path = "validation_runs"
-validation_path = f"{validation_runs_path}/validation_-nit_pop_{initial_population_projected_raster_path.split('_')[-2]}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
+validation_path = f"{validation_runs_path}/validation_init_pop_{initial_population_projected_raster_path.split('_')[-1]}_{validation_population_scale}_population_scale_{SEASONALLITY_MODE}_pattern_{validation_replicates}_replicates"
 
 VALIDATION_RUN_INPUTS_DIR = f"{validation_path}/input"
 log_path = f"{validation_path}/log"
