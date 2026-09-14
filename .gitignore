@@ -1,4 +1,4 @@
-# Ignore data, generatedm and output directories
+# Ignore data, generated and output directories
 DATA/
 generated/
 calibration*/
@@ -11,3 +11,6 @@ __pycache__/
 
 # Ignore virtual environments
 .venv-ng-se/
+
+# Ignore trash files
+trash/
