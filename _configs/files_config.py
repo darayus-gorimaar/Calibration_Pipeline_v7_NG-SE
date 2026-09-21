@@ -35,11 +35,20 @@ travel_time_raster_path = f"{data_path}/{country_code}_traveltime.asc"
 incidence_data_csv_path = f"{data_path}/Incidence Data/{country_code}_incidence_data_for_pipeline_DO_NOT_MODIFY.csv"
 pfpr_raster_path = f"{data_path}/{country_code}_pfpr_{calibration_year}.asc"
 
-seasonality_file_path = f"{template_path}/{country_code}_seasonality.csv"
+district_sequential_mapping_csv_path = f"{data_path}/ng-se_district_seq1_mapping.csv"
+
+mapping_csv_path = f"{data_path}/{country_code}_mapping.csv"
+
+# seasonality files
+seasonality_district_to_cluster_mapping_csv_path = f"{data_path}/Seasonality Data/health_district_cluster.csv"
+seasonality_cluster_csv_path_template = f"{data_path}/Seasonality Data/seasonality_cluster*.csv"
+
+# seasonality_file_path = f"{template_path}/{country_code}_seasonality.csv"
+seasonality_file_path_raw = f"{data_path}/Seasonality Data/seasonality_multipliers.csv"
+seasonality_file_path = f"{template_path}/{country_code}_seasonality_multiple_patterns_1_location.csv"
 
 #/generated/
 initial_population_projected_raster_path = f"{generated_data_path}/{country_code}_population_backwards_projected_{initial_year}_21.12M.asc"
-
 
 projected_population_calibration_year_raster_path = f"{generated_data_path}/{country_code}_population_projected_{calibration_year}.asc"
 

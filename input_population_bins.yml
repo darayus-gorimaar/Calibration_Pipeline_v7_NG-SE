@@ -159,6 +159,7 @@ population_demographic:
 
   # 1-year average probability of dying across all ages in each bin (2011-23 average) MINUS 1-year average probability of dying OF MALARIA (2011-23 average) across all ages in each bin
   # WITH 60+ age bin death rate overwritten with WHO life expectancy at age 60+ data https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy
+  # last bin value = 1 / life expectancy at age 60+
   death_rate_by_age_class:
     [
       0.0731601992,
@@ -305,7 +306,7 @@ spatial_settings:
 # ---------------------------------------------------------------
 seasonality_settings:
   # Seasonality of malaria (to be updated with specific country data)
-  enable: false
+  enable: true
   mode: pattern
   pattern:
     admin_level: district
